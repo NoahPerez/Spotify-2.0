@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/6068c20ad9.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Homepage</title>
+
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #02070d, #091f27, #003539, #004b41, #2a613e);
+        }
+        nav {
+            background-color: #000;
+
+        }
+
+        .footer {
+            position: sticky;
+            bottom: 0;
+            background-color: #282828;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            height: 91px;
+            border-top: 0.5px solid black;
+        }
+
+        #parent {
+            /* height: 80vh; */
+            position: relative;
+            height: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+        }
+
+        .myheight {
+            height: calc(100% - 91px);
+        }
+
+        .mywidth nav {
+            width: 85%;
+            padding: 20px 0;
+            margin: 0;
+        }
+
+
+        ul.list-unstyled{
+            padding: 30px 30px 10px 15px;
+
+        }
+
+.myIcon{
+    font-size: 21px;
+    color:white;
+}
+.myPictureTitle{
+    font-weight: 900;
+    color:white;
+}
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container-fluid px-0 h-100"> <!-- MAIN CONTAINER -->
+
+
+        <div class="row myheight mx-0 w-100"> <!-- MAIN ROW -->
+
+            <!-- FIRST COL START SIDEBAR -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 pl-0 h-100">
+
+                <nav
+                    class="navbar navbar-expand-lg navbar-dark d-flex flex-column justify-content-between align-items-start h-100 mywidth">
+
+                    <div>
+                        <a class="navbar-brand py-4 pl-2" href="#"><img src="assets/logo/Spotify_Logo_RGB_White.png"
+                                width="130px" height="40px"></a>
+
+
+                        <ul class="navbar-nav pl-1 mr-auto flex-column">
+                            <li class="nav-item pt-2 py-1">
+                                <a id="home" class="nav-link spotifyFont active" href="index.html"> <i
+                                        class="fas fa-home pr-1"></i>
+                                    Home</a>
+                            </li>
+                            <li class="nav-item  py-1">
+                                <a class="nav-link spotifyFont" href="#search"><i class="fas fa-search pr-1"></i>
+                                    Search</a>
+                            </li>
+                            <li class="nav-item spotifyFont py-1">
+                                <a class="nav-link spotifyFont" href="#"> <i class="fas fa-list-ul pr-1"></i> Your
+                                    Library</a>
+                            </li>
+                        </ul>
+
+                    </div><!-- END NEW WRAP -->
+                    <div class="align-self-center w-100 ">
+                        <ul class="navbar-nav pl-1 flex-column align-items-center">
+
+                            <li class="py-2 pr-2">
+                                <button
+                                    class="mySignup d-xs-inline-block d-sm-none d-md-none d-lg-inline-block">SIGNUP</button>
+                            </li>
+
+                            <li class="py-2 pr-2">
+                                <button
+                                    class="myLogin d-xs-inline-block  d-sm-none d-md-none d-lg-inline-block">LOGIN</button>
+                            </li>
+                            <li class="py-2 pr-3 text-center">
+                                <p>Cookie Policy | Privacy</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <!--  </div>  -->
+            </div><!-- END OF COL/SIDEBAR-->
+
+            <!-- COL OF MAIN CONTENT -->
+            <div class="col-6 col-sm-8 col-md-9 col-lg-9 col-xl-10 pl-4 position-relative" id="parent">
+
+                <div class="main-albums-container">
+                </div><!-- End of album container -->
+
+
+            </div><!-- END OF MAIN CONTENT -->
+        </div><!-- END OF THE MAIN ROW -->
+
+        <!-- START OF THE FOOTER -->
+        <footer class="row footer">
+            <div class="col-12 ">This is should be a player :)</div>
+        </footer>
+    </div><!-- END OF MAIN CONTAINER -->
+    <div id="search">
+        <button type="button" class="close">×</button>
+        <form>
+            <input type="search" value="" placeholder="Write an artist/band" />
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+    
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="album.js"></script>
+
+</body>
+
+</html>
